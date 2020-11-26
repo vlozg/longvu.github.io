@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 
 body {
@@ -31,4 +33,35 @@ body {
     margin: 0;
     bottom: 0;
     font-size:  6vw;
+}
+
+h2 {
+    margin: 1.5em 0 0 0;
+    display: inline-flex;
+    background-color: #facd19;
+}
+
+h3 {
+    margin: 1.25em 0 0 0;
+}
+
+#edu table {
+    width: 100%;
+}
+
+#edu tr {
+    height: 75px;
+}
+
+#edu .t-end {
+    height: 0;
+}
+
+#edu th, td{
+    text-align: left;
+    vertical-align: 0;
+}
+
+#edu th {
+    width: 25%;
 }
