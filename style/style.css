@@ -5,6 +5,11 @@
     color: #292c30;
 }
 
+*::selection {
+    color: #facd19;
+    background-color: #292c30;
+}
+
 body {
     font-family: "Lexend Deca", sans-serif;
     padding: 0 10% 0 10%;
