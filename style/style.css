@@ -46,6 +46,8 @@ h2 {
     margin-block-end: 0.5em;
     display: inline-flex;
     background-color: #facd19;
+    animation-name: heading-reveal;
+    animation-duration: 1s;
 }
 
 h3 {
@@ -75,4 +77,32 @@ h3:nth-of-type(1) {
 
 .edu th {
     width: 25%;
+}
+
+.contact ul {
+    list-style-type: none;
+}
+
+.contact img {
+    height: 1.5em;
+    margin: 0;
+    margin-left: 0.5em;
+    vertical-align: middle;
+}
+
+.contact span {
+    vertical-align: middle;
+    margin-left: 1em;
+}
+
+.column {
+    width: 50%;
+    min-width: 300px;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
 }
