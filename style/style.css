@@ -23,6 +23,16 @@ body {
     margin: 2em 0 0 0;
 }
 
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+}
+
+.column {
+    margin: 0;
+}
+
 #avatar {
     width: 20vw;
     height: 20vw;
@@ -64,8 +74,16 @@ h2::before {
     transition: width 400ms;
 }
 
-h2:hover::before {
-    width: 20vw;
+@media screen and (min-width: 2125px) {
+    h2:hover::before {
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 2125px) and (min-width: 532px) {
+    h2:hover::before {
+        width: 425px;
+    }
 }
 
 h3 {
@@ -76,25 +94,23 @@ h3:nth-of-type(1) {
     margin-block-start: 1em;
 }
 
-.edu table {
-    width: 100%;
+.edu .row {
+    margin-top: 1em;
 }
 
-.edu tr {
-    height: 75px;
+.edu .column {
+    margin-top: 1em;
+    min-width: 278px;
 }
 
-.edu tr:nth-last-of-type(1) {
-    height: 0;
-}
-
-.edu th, td{
-    text-align: left;
-    vertical-align: 0;
-}
-
-.edu th {
+.edu .column.head {
+    font-weight: bold;
     width: 25%;
+    min-width: 200px;
+}
+
+.edu em {
+    font-size: 1.2em;
 }
 
 .contact ul {
@@ -113,16 +129,13 @@ h3:nth-of-type(1) {
     margin-left: 1em;
 }
 
-.column {
-    width: 50%;
-    min-width: 300px;
-    margin: 0;
+.contact div {
+    margin-bottom: 0;
 }
 
-.row {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0;
+.contact .column {
+    width: 50%;
+    min-width: 300px;
 }
 
 a:link, a:visited {
